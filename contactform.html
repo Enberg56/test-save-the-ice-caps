@@ -11,7 +11,87 @@
 </head>
 
 <body>
-  <div class="wrapper">
+  <div class="contactform-wrapper">
+    <form>
+      <h1 class="header">Sign up for our newsletter</h1>
+      <p>
+        How would you like to recieve your newsletter?
+        We're sending out newsletters to mailboxes and emails
+        inboxes.
+        Our newsletters are sent out the 1st of each month.
+      </p>
+      <div class="container container-checkbox">
+        <div class="item">
+          <input type="checkbox" name="newsletter_physical" data-type="physical">
+          <label for="newsletter_physical">I would like to recieve PHYSICAL newsletter(s)</label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="newsletter_digital" data-type="digital">
+          <label for="newsletter_digital">I would like to recieve DIGITAL newsletter(s)</label>
+        </div>
+      </div>
+      <div class="container container-radio">
+        <p>Do you want to recive monthly newsletters by donating monthly?</p>
+        <div class="item">
+          <input type="radio" id="oneoff_frequency" name="donation_frequency">
+          <label for="oneoff_frequency">No, this is a ONE TIME donation, I only want one newsletter</label>
+        </div>
+        <div class="item">
+          <input type="radio" id="monthly_frequency" name="donation_frequency">
+          <label for="monthly_frequency">Yes, I'd like this to be a MONTHLY DONATION, I would like to recive newsletters
+            1st of each month.</label>
+        </div>
+      </div>
+      <div class="container container-textfield container-details hidden">
+        <div class="item email-details">
+          <label for="user-email">Email:</label>
+          <input type="text" name="user-email">
+        </div>
+        <div class="item physical-details">
+          <label for="user-name">Full name:</label>
+          <input type="text" name="user-name">
+        </div>
+        <div class="item">
+          <label for="user-address">Home address:</label>
+          <input type="text" name="user_address">
+        </div>
+      </div>
+      <!--
+------ Unnececary information to gather, see process.md "Comments while working" -> ------
+      <label for="user_genderm">male</label>
+      <input type="radio" id="user_genderm" name="user_gender">
+      <label for="user_genderf">female</label>
+      <input type="radio" id="user_genderf" name="user_gender">
+      <label for="user_gendero">other</label>
+      <input type="radio" id="user_gendero" name="user_gender">
+
+      <label for="user_birth">your date of birth</label>
+      <input type="date" name="user_birth">
+
+      <label for="user_income">your income level</label>
+      <input type="number" name="user_income">
+-->
+      <div class="container container-textfield">
+        <div class="item">
+          <label for="donation_amount">Donation amount</label>
+          <input type="number" name="donation_amount" value="1">
+        </div>
+      </div>
+      <div class="container">
+        <div class="item">
+          <input type="checkbox" name="terms_and_conditions">
+          <label for="terms_and_conditions">Yes, I agree to the <a href="#">terms and conditions</a></label>
+        </div>
+        <div class="item">
+          <input type="checkbox" name="terms_and_conditions">
+          <label for="future_offers">I agree to recieve follow-up letters like questions for donations
+            (optional)</label>
+        </div>
+        <div class="item">
+          <input class="btn" type="button" value="Submitt">
+        </div>
+      </div>
+    </form>
 
   </div>
   <script src="index.js"></script>
