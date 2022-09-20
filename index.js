@@ -8,7 +8,7 @@ digitaldetails.classList.add('hidden')
 
 
 function handleClick(e) {
-  const newsletter_type = e.tartet.dataset.type
+  const newsletter_type = e.target.dataset.type
 
   if (newsletter_type == 'physical'){
     digitaldetails.classList.toggle('hidden');
